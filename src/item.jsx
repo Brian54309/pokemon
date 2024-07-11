@@ -48,10 +48,11 @@ const Item=({name,url})=>{
             <div className="subcontainer">
             <img className="image" src={itemData.imageUrl}/>
             <div className="info">
-            <div>Ability:</div><span>{itemData.ability}</span>
-            <div>Height:{itemData.height/10} m</div>
-            <div>Weight:{itemData.weight/10} kg</div>
-            <div>Type:{itemData.type}</div>
+            
+            <div className="ability-key">Ability:</div><span className="ability-value">{itemData.ability}</span>
+            <div className="ability-key">Height:</div><span className="ability-value">{itemData.height/10} m</span>
+            <div className="ability-key">Weight:</div><span className="ability-value">{itemData.weight/10} kg</span>
+            <div className="ability-key">Type:</div><span className="ability-value">{itemData.type}</span>
             </div>
             </div>
             <div className="stat">
